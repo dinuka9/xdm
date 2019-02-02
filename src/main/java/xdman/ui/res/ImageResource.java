@@ -1,11 +1,11 @@
 package xdman.ui.res;
 
-import java.util.*;
-
-import javax.swing.*;
-
 import xdman.XDMConstants;
 import xdman.util.XDMUtils;
+
+import javax.swing.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ImageResource {
 	private final static String ICON_FOLDER = "icons";
@@ -37,7 +37,7 @@ public class ImageResource {
 		} else {
 			folder = "hdpi";
 		}
-		System.out.println("icon type:"+folder);
+		System.out.println("icon type:" + folder + "/" + name);
 		try {
 			java.net.URL url = ImageResource.class.getResource("/" + ICON_FOLDER + "/" + folder + "/" + name);
 			if (url == null)

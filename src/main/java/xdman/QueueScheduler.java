@@ -111,7 +111,8 @@ public class QueueScheduler implements Runnable {
 
 				long now = System.currentTimeMillis();
 				if (now - lastUpdateChecked > 3600 * 1000) {
-					int stat = UpdateChecker.getUpdateStat();
+//					int stat = UpdateChecker.getUpdateStat();
+					int stat = UpdateChecker.NO_UPDATE_AVAILABLE;
 					switch (stat) {
 					case UpdateChecker.NO_UPDATE_AVAILABLE:
 						break;
