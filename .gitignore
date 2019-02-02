@@ -1,0 +1,11 @@
+### Maven template
+target/
+
+###idea template
+*.iml
+.idea
+
+###other
+logs/
+documents/
+*.logs
